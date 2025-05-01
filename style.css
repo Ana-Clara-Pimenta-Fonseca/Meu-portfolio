@@ -1,0 +1,111 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+}
+
+p {
+    max-width: 800px;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+main {
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    display: flex;
+    margin: 10px;
+}
+
+
+footer img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Responsivo para celular */
+@media (max-width: 600px) {
+    p {
+        margin: 10px;
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+footer .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d68ece;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer .btn:hover {
+    background-color: #596a91;
+    transform: scale(1.05);
+}
